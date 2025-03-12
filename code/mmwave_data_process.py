@@ -73,7 +73,7 @@ def loadData(data_size, radar_dir, ecg_dir):
             slice_data = torch.from_numpy(data[i * data_size: (i + 1) * data_size].copy())  # 转换为Tensor
             slice_data/=1000
             ecg_data.append(slice_data)
-    return ecg_data, ecg_data
+    return mmwave_data, ecg_data
 
 # def loadData(data_size, radar_dir, ecg_dir):
 #     radar_file_list, ecg_file_list = get_matched_filelists(radar_dir, ecg_dir)
