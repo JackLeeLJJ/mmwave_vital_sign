@@ -9,13 +9,21 @@ matplotlib.use('TKAgg')
 from mmwave_data_process import generate_synthetic_data,loadData,get_matched_filelists
 from test9_unet import UNet
 # # 文件夹路径
-train_wake_radar_dir = "../data/mmwaveData80/trainData/down_mmwaveData/train_wake/"
-train_tired_radar_dir="../data/mmwaveData80/trainData/down_mmwaveData/train_tired/"
-train_ecg_dir = "../data/mmwaveData80/trainData/ecgData"
+# train_wake_radar_dir = "../data/mmwaveData80/trainData/down_mmwaveData/train_wake/"
+# train_tired_radar_dir="../data/mmwaveData80/trainData/down_mmwaveData/train_tired/"
+# train_ecg_dir = "../data/mmwaveData80/trainData/ecgData"
+#
+# test_wake_radar_dir = "../data/mmwaveData80/testData/down_mmwaveData/test_wake/"
+# test_tired_radar_dir = "../data/mmwaveData80/testData/down_mmwaveData/test_tired"
+# test_ecg_dir = "../data/mmwaveData80/testData/ecgData"
 
-test_wake_radar_dir = "../data/mmwaveData80/testData/down_mmwaveData/test_wake/"
-test_tired_radar_dir = "../data/mmwaveData80/testData/down_mmwaveData/test_tired"
-test_ecg_dir = "../data/mmwaveData80/testData/ecgData"
+train_wake_radar_dir = "../data/LSS_mmwaveData/trainData/down_mmwaveData/train_wake/"
+train_tired_radar_dir="../data/LSS_mmwaveData/trainData/down_mmwaveData/train_tired/"
+train_ecg_dir = "../data/LSS_mmwaveData/trainData/ecgData/"
+
+test_wake_radar_dir = "../data/LSS_mmwaveData/testData/down_mmwaveData/test_wake/"
+test_tired_radar_dir = "../data/LSS_mmwaveData/testData/down_mmwaveData/test_tired/"
+test_ecg_dir = "../data/LSS_mmwaveData/testData/ecgData/"
 
 # 生成对齐1024维度的数据集
 data,labels=loadData(1024,test_wake_radar_dir,test_ecg_dir)

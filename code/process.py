@@ -6,8 +6,8 @@ from mmwave_data_process import loadData
 # 加载数据
 file1="../data/mmwaveData80/trainData/down_mmwaveData/train_wake/mmwave_0304_crf_0_0_0.npy"
 file2="../data/mmwaveData80/trainData/ecgData/ECG_Clean_0304_crf_0_0.npy"
-mmfilepath='../LSS_80_down_mmwaveData/mmwave_0307_txc_0_39_0.npy'
-ecgfilepath="../data/mmwaveData80/testData/ecgData/ECG_Clean_0307_txc_0_39.npy"
+mmfilepath="../data/LSS_mmwaveData/testData/down_mmwaveData/test_wake/mmwave_0307_txc_0_39_0.npy"
+ecgfilepath="../data/LSS_mmwaveData/testData/ecgData/ECG_Clean_0307_txc_0_39.npy"
 mmwave_data = np.load(mmfilepath)
 ecg_data = np.load(ecgfilepath)
 
